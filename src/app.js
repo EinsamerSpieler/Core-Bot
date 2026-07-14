@@ -92,7 +92,7 @@ class TitanBot extends Client {
     // Webhook Endpunkt
     app.post('/webhook/alerts', (req, res) => {
       const { message, channelId } = req.body;
-      const targetChannelId = channelId || 'HIER_DEINE_CHANNEL_ID_REIN';
+      const targetChannelId = channelId || '1526663909019357408';
       const channel = this.channels.cache.get(targetChannelId);
       
       if (channel) {
