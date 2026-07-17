@@ -11,7 +11,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "dnd",
+    status: "idle",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "/help for help | ♥️",
+        name: "Spielt auf Palworld 1.0 | ♥️",
         // Activity type number (0 = Playing).
         type: 4,
       },
@@ -59,9 +59,9 @@ export const botConfig = {
   applications: {
     // Default questions shown when someone fills out an application.
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
-      { question: "Why do you want to join?", required: true },
+      { question: "Wie ist dein Name?", required: true },
+      { question: "Wie alt bist du?", required: true },
+      { question: "Warum willst du beitreten?", required: true },
     ],
 
     // Embed colors by application status.
@@ -139,7 +139,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "Core-Bot",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -159,9 +159,9 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "Core Shard",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "Core Shards",
       // Currency symbol shown in balances.
       symbol: "$",
     },
@@ -362,11 +362,11 @@ export const botConfig = {
     // Welcome template posted when a user joins.
     // Placeholders: {user}, {server}, {memberCount}
     defaultWelcomeMessage:
-      "Welcome {user} to {server}! We now have {memberCount} members!",
+      "Willkomen {user} auf {server}! Wir haben {memberCount} Member erreicht!",
     // Goodbye template posted when a user leaves.
     // Placeholders: {user}, {memberCount}
     defaultGoodbyeMessage:
-      "{user} has left the server. We now have {memberCount} members.",
+      "{user} hat uns verlassen. Wir wünschen alles gute auf  der Reise! {memberCount} Member sind treu dabei.",
     // Channel ID for welcome messages.
     defaultWelcomeChannel: null,
     // Channel ID for goodbye messages.
